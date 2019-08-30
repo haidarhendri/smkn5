@@ -27,6 +27,8 @@ Route::get('/barang/hapus/{id}', 'BarangController@hapus');
 Route::post('/barang/simpan', 'BarangController@simpan_edit');
 Route::get('/barang/cari', 'BarangController@cari');
 
+Route::get('/upload', 'UploadController@upload');
+Route::get('/upload/proses', 'UploadController@proses');
 
 Auth::routes();
 
